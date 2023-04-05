@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TBRomance :: Pick My Next Read!</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This page gives users the ability to take part in a poll to decide which book I should read next from my TBR shelf.">
+        <link href="tbromance.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1><a href="index.html">TBRomance</a></h1>
+            </header>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="last.html">Last Read</a></li> 
+                    <li><a href="now.html">Reading Now</a></li>
+                    <li><a href="fave.html">Favorite</a></li> 
+                </ul>       
+            </nav>
+            <div id="pollbook"></div>
+            <main>
+                <h2>Pick My Next Read!</h2>
+                <p>Below you can take part in a poll to decide which book from my tbr list I should read next! If you are not a fan of the four books listed then give me a new suggestion. All you have to do is choose "other" and fill out the next two fields with a new book and why you think I should read it!</p>
+                <p>Required fields are marked with an asterisk *.</p>
+                <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+                    <label for="myFName">*First Name:</label>
+                    <input type="text" name="myFName" id="myFName" required>
+                    <label for="myEmail">*E-mail:</label>
+                    <input type="text" name="myEmail" id="myEmail" required>
+                    <label for="myZip">*Zip Code:</label>
+                    <input type="text" name="myZip" id="myZip" max="8" required>
+                    <label for="myPick">*Pick A Book</label>
+                    <select name="myPick" id="myPick" form="myPick">
+                        <option value="normal">"Normal People"- Sally Rooney</option>
+                        <option value="archer">"Archer's Voice"- Mia Sheridan</option>
+                        <option value="love">"Love and Other Words"- Christina Lauren</option>
+                        <option value="heart">"Heart Bones"- Colleen Hoover</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="myBook">New Book Title:</label>
+                    <input type="text" name="myBook" id="myBook">
+                    <label for="myComments">Why Should I Read It?:</label>
+                    <textarea name="myComments" id="myComments" rows="3" cols="30"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+                <aside>
+                    <p><span class="yellowlink">Also check out my current <a href="tbr.html">TBR</a>!</span></p><br>
+                </aside>
+            </main>
+            <footer>
+                <p>Copyright &copy; 2023 TBRomance<br>
+                <a href="mailto:madison@meszaros.com">madison@meszaros.com</a></p>
+            </footer>
+        </div>
+    </body>
+</html>
